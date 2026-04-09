@@ -33,13 +33,13 @@
 
 .tab-btn:hover {
   color: var(--text);
-  background: rgba(108, 99, 255, 0.08);
+  background: rgba(255, 107, 53, 0.08);
 }
 
 .tab-btn.active {
   background: var(--gradient);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3);
 }
 
 /* ── PRICING FULL PAGE ── */
@@ -122,7 +122,7 @@ input::placeholder, textarea::placeholder {
 
 input:focus, textarea:focus, select:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.12);
 }
 
 input.error, textarea.error, select.error {
@@ -172,7 +172,7 @@ select option {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: rgba(0, 212, 170, 0.15);
+  background: rgba(255, 179, 71, 0.15);
   border: 2px solid var(--accent-2);
   display: flex;
   align-items: center;
@@ -216,7 +216,7 @@ select option {
 }
 
 .reassurance-item:hover {
-  border-color: rgba(108, 99, 255, 0.25);
+  border-color: rgba(255, 107, 53, 0.25);
 }
 
 .reassurance-item__icon {
@@ -286,14 +286,14 @@ select option {
 
 .filter-btn:hover {
   color: var(--text);
-  border-color: rgba(108, 99, 255, 0.3);
+  border-color: rgba(255, 107, 53, 0.3);
 }
 
 .filter-btn.active {
   background: var(--gradient);
   color: #fff;
   border-color: transparent;
-  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3);
 }
 
 .portfolio-grid {
@@ -314,7 +314,7 @@ select option {
 .portfolio-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card), var(--shadow-glow-sm);
-  border-color: rgba(108, 99, 255, 0.25);
+  border-color: rgba(255, 107, 53, 0.25);
 }
 
 .portfolio-card__thumb {
@@ -383,24 +383,24 @@ select option {
 .portfolio-card__btn:hover { gap: 10px; }
 
 /* Category colors */
-.cat-web { background: rgba(108, 99, 255, 0.15); color: var(--accent); }
+.cat-web { background: rgba(255, 107, 53, 0.15); color: var(--accent); }
 .cat-print { background: rgba(255, 107, 107, 0.15); color: #FF6B6B; }
-.cat-social { background: rgba(0, 212, 170, 0.15); color: var(--accent-2); }
+.cat-social { background: rgba(255, 179, 71, 0.15); color: var(--accent-2); }
 .cat-google { background: rgba(255, 184, 0, 0.15); color: #FFB800; }
 
 /* Thumb gradients */
-.thumb-1 { background: linear-gradient(135deg, #6C63FF 0%, #9C4DFF 100%); }
+.thumb-1 { background: linear-gradient(135deg, #FF6B35 0%, #9C4DFF 100%); }
 .thumb-2 { background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); }
-.thumb-3 { background: linear-gradient(135deg, #00D4AA 0%, #00B4D8 100%); }
+.thumb-3 { background: linear-gradient(135deg, #FFB347 0%, #00B4D8 100%); }
 .thumb-4 { background: linear-gradient(135deg, #FFB800 0%, #FF6B35 100%); }
-.thumb-5 { background: linear-gradient(135deg, #6C63FF 0%, #00D4AA 100%); }
+.thumb-5 { background: linear-gradient(135deg, #FF6B35 0%, #FFB347 100%); }
 .thumb-6 { background: linear-gradient(135deg, #FF6B6B 0%, #C85AC8 100%); }
-.thumb-7 { background: linear-gradient(135deg, #0095FF 0%, #6C63FF 100%); }
-.thumb-8 { background: linear-gradient(135deg, #00D4AA 0%, #00FF87 100%); }
+.thumb-7 { background: linear-gradient(135deg, #0095FF 0%, #FF6B35 100%); }
+.thumb-8 { background: linear-gradient(135deg, #FFB347 0%, #00FF87 100%); }
 .thumb-9 { background: linear-gradient(135deg, #FFB800 0%, #FFEF61 100%); }
 .thumb-10 { background: linear-gradient(135deg, #FF6B6B 0%, #FF6BC8 100%); }
-.thumb-11 { background: linear-gradient(135deg, #6C63FF 0%, #0095FF 100%); }
-.thumb-12 { background: linear-gradient(135deg, #00D4AA 0%, #6C63FF 100%); }
+.thumb-11 { background: linear-gradient(135deg, #FF6B35 0%, #0095FF 100%); }
+.thumb-12 { background: linear-gradient(135deg, #FFB347 0%, #FF6B35 100%); }
 
 /* ── SERVICES PAGE ── */
 .service-section {
@@ -478,8 +478,8 @@ select option {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: rgba(0, 212, 170, 0.15);
-  border: 1px solid rgba(0, 212, 170, 0.3);
+  background: rgba(255, 179, 71, 0.15);
+  border: 1px solid rgba(255, 179, 71, 0.3);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300D4AA' stroke-width='2.5'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
   background-size: 12px;
   background-repeat: no-repeat;
@@ -508,7 +508,7 @@ select option {
 }
 
 .accordion-item.open {
-  border-color: rgba(108, 99, 255, 0.3);
+  border-color: rgba(255, 107, 53, 0.3);
 }
 
 .accordion-trigger {

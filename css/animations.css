@@ -239,7 +239,7 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background: rgba(108, 99, 255, 0.15);
+  background: rgba(255, 107, 53, 0.15);
   border-color: var(--accent);
 }
 
