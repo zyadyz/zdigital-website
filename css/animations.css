@@ -1,0 +1,263 @@
+/* ===========================
+   ZDigital — animations.css
+   =========================== */
+
+/* ── Keyframes ── */
+@keyframes dotsShift {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.9; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+@keyframes bounceY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes progressFill {
+  from { width: 0; }
+  to { width: var(--progress); }
+}
+
+/* ── Floating laptop ── */
+.hero__mockup .laptop {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* ── Gradient animated button ── */
+.btn-primary {
+  background-size: 200% auto;
+}
+
+.btn-primary:hover {
+  background-position: right center;
+}
+
+/* ── Shimmer loading effect ── */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.02) 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.02) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* ── AOS custom overrides ── */
+[data-aos="fade-up-custom"] {
+  transform: translateY(30px);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-up-custom"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ── Card hover glow effect ── */
+.service-card,
+.plan-card,
+.why-card,
+.portfolio-card,
+.testimonial-card {
+  position: relative;
+}
+
+.service-card::after,
+.plan-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: var(--gradient);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.service-card:hover::after,
+.plan-card--featured::after {
+  opacity: 0.4;
+}
+
+/* ── Spinner for form submit ── */
+.btn-loading .btn-text { display: none; }
+.btn-loading::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* ── Stat number counter ── */
+.stat-item__number {
+  transition: all 0.8s ease-out;
+}
+
+/* ── Nav link active indicator ── */
+.nav__links a.active {
+  color: var(--text);
+}
+
+/* ── Scroll progress bar ── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--gradient);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Ripple on buttons ── */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(0);
+  animation: btnRipple 0.5s ease-out forwards;
+  pointer-events: none;
+  margin: -50px 0 0 -50px;
+}
+
+@keyframes btnRipple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+/* ── Gradient border on focus ── */
+.form-group:focus-within label {
+  color: var(--accent);
+}
+
+/* ── Page transition ── */
+.page-transition {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+/* ── Tag pulse ── */
+.tag {
+  position: relative;
+}
+
+.tag::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ── Testimonial slider buttons ── */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent) !important;
+  background: var(--surface-2);
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50%;
+  border: var(--border);
+  transition: all var(--transition);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important;
+  font-weight: 800;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(108, 99, 255, 0.15);
+  border-color: var(--accent);
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .hero__mockup .laptop {
+    animation: none;
+  }
+
+  .hero__dots {
+    animation: none;
+  }
+}

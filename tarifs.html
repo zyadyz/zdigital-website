@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarifs — ZDigital | Agence Marketing Digital</title>
+  <meta name="description" content="Découvrez les tarifs transparents de ZDigital pour la création de sites web, flyers, fiches Google, réseaux sociaux et publicité en ligne. Devis gratuit sous 48h." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tarifs ZDigital — Marketing Digital" />
+  <meta property="og:description" content="Des formules claires et transparentes pour chaque besoin. Aucun frais caché." />
+  <meta property="og:url" content="https://zdigital.fr/tarifs.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tarifs — ZDigital" />
+  <meta name="twitter:description" content="Des formules claires et transparentes pour chaque besoin." />
+
+  <link rel="canonical" href="https://zdigital.fr/tarifs.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="ZDigital — Accueil">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="url(#logoGradT)"/>
+            <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logoGradT" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6C63FF"/>
+                <stop offset="1" stop-color="#00D4AA"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="nav__logo-text">ZDigital</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html" class="active">Tarifs</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Menu mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="services.html">Services</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="text-align:center;justify-content:center;">Demander un devis</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Tarifs</span>
+      </nav>
+      <div class="tag" data-aos="fade-up">Pas de frais cachés</div>
+      <h1 data-aos="fade-up" data-aos-delay="50">Nos <span class="gradient-text">tarifs transparents</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">Des formules adaptées à chaque budget. Choisissez votre service et comparez les plans pour trouver celui qui vous convient.</p>
+    </div>
+  </section>
+
+  <!-- PRICING TABS -->
+  <section class="section" style="padding-top:0;" x-data="{ activeTab: 'site-web' }">
+    <div class="container">
+
+      <!-- Tab Nav -->
+      <div class="tabs-nav" role="tablist" data-aos="fade-up">
+        <button class="tab-btn" :class="{ active: activeTab === 'site-web' }" @click="activeTab = 'site-web'" role="tab" :aria-selected="activeTab === 'site-web'">Site Web</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'flyers' }" @click="activeTab = 'flyers'" role="tab" :aria-selected="activeTab === 'flyers'">Flyers &amp; Visuels</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'google' }" @click="activeTab = 'google'" role="tab" :aria-selected="activeTab === 'google'">Fiche Google</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'reseaux' }" @click="activeTab = 'reseaux'" role="tab" :aria-selected="activeTab === 'reseaux'">Réseaux Sociaux</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'reservation' }" @click="activeTab = 'reservation'" role="tab" :aria-selected="activeTab === 'reservation'">Réservation</button>
+      </div>
+
+      <!-- ── SITE WEB ── -->
+      <div x-show="activeTab === 'site-web'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0">
+        <div class="pricing-tabs-grid">
+          <!-- Starter -->
+          <div class="plan-card">
+            <div class="plan-card__name">Starter</div>
+            <div class="plan-card__price">490<span>€</span></div>
+            <p class="plan-card__desc">Pour créer votre première présence en ligne rapidement.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Site vitrine jusqu'à 5 pages</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Design responsive mobile/tablette/desktop</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Formulaire de contact intégré</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Optimisation SEO on-page de base</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Intégration Google Analytics</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Livraison en 7 jours</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Blog intégré</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Système de réservation</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Maintenance mensuelle incluse</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>E-commerce</li>
+            </ul>
+            <a href="contact.html?plan=starter-web" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+
+          <!-- Pro -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-badge">Le plus choisi</div>
+            <div class="plan-card__name">Pro</div>
+            <div class="plan-card__price">990<span>€</span></div>
+            <p class="plan-card__desc">La solution complète pour les professionnels ambitieux.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Site jusqu'à 10 pages</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Design premium sur-mesure</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Blog intégré avec CMS</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>SEO avancé + rapport mensuel</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Système de réservation</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Maintenance 3 mois incluse</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Formulaires avancés</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Livraison en 10 jours</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>E-commerce complet</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Support prioritaire 24/7</li>
+            </ul>
+            <a href="contact.html?plan=pro-web" class="btn btn-primary">Choisir ce plan</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="plan-card">
+            <div class="plan-card__name">Premium</div>
+            <div class="plan-card__price">1990<span>€</span></div>
+            <p class="plan-card__desc">La puissance maximale pour dominer votre marché digital.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Pages illimitées</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>E-commerce complet (WooCommerce/Shopify)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Système de réservation avancé multi-services</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>SEO Premium + audit mensuel</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Maintenance 12 mois incluse</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Support prioritaire 24/7</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Formation CMS incluse (2h)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Livraison en 14 jours</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Hébergement 1 an offert</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Nom de domaine inclus</li>
+            </ul>
+            <a href="contact.html?plan=premium-web" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FLYERS & VISUELS ── -->
+      <div x-show="activeTab === 'flyers'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0">
+        <div class="pricing-tabs-grid">
+          <!-- Basique -->
+          <div class="plan-card">
+            <div class="plan-card__name">Basique</div>
+            <div class="plan-card__price">49<span>€</span></div>
+            <p class="plan-card__desc">Un visuel professionnel pour une occasion spécifique.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>1 visuel (flyer, affiche ou story)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>2 propositions de design</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>1 révision incluse</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Livraison en 48h</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Fichiers HD (PDF + PNG)</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Charte graphique</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Formats multiples</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Révisions illimitées</li>
+            </ul>
+            <a href="contact.html?plan=basique-flyers" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+
+          <!-- Pro -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-badge">Le plus choisi</div>
+            <div class="plan-card__name">Pro</div>
+            <div class="plan-card__price">149<span>€</span></div>
+            <p class="plan-card__desc">Un kit complet pour une campagne de communication réussie.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>5 visuels (formats variés)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Charte graphique simplifiée</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>3 propositions de design</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>3 révisions incluses</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Formats print + digital</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Livraison en 72h</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Fichiers sources inclus</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Animations (GIF/vidéo)</li>
+            </ul>
+            <a href="contact.html?plan=pro-flyers" class="btn btn-primary">Choisir ce plan</a>
+          </div>
+
+          <!-- Pack Communication -->
+          <div class="plan-card">
+            <div class="plan-card__name">Pack Communication</div>
+            <div class="plan-card__price">349<span>€</span></div>
+            <p class="plan-card__desc">La solution complète pour une identité visuelle cohérente.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>15 visuels tous formats</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Charte graphique complète</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Logo + variantes</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Révisions illimitées</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Animations GIF pour réseaux</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Templates réutilisables</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Livraison en 5 jours</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Tous fichiers sources</li>
+            </ul>
+            <a href="contact.html?plan=pack-flyers" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FICHE GOOGLE ── -->
+      <div x-show="activeTab === 'google'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0">
+        <div class="pricing-tabs-grid">
+          <!-- Création -->
+          <div class="plan-card">
+            <div class="plan-card__name">Création</div>
+            <div class="plan-card__price">99<span>€</span></div>
+            <p class="plan-card__desc">Création et configuration complète de votre fiche Google Business.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Création de la fiche Google Business</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Vérification du compte</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rédaction des informations optimisées</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Choix des catégories pertinentes</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Ajout photos (jusqu'à 10)</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Suivi mensuel des performances</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Réponse aux avis</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Posts réguliers</li>
+            </ul>
+            <a href="contact.html?plan=creation-google" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+
+          <!-- Optimisation + Suivi -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-badge">Recommandé</div>
+            <div class="plan-card__name">Optimisation + Suivi</div>
+            <div class="plan-card__price">249<span>€</span></div>
+            <p class="plan-card__desc">Maximisez votre visibilité locale avec un suivi de 3 mois.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Audit de votre fiche existante</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Optimisation complète (SEO local)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Photos professionnelles (20+)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Stratégie d'avis clients</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Posts mensuels (4/mois)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Suivi performances 3 mois</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rapport mensuel</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Gestion avis illimitée</li>
+            </ul>
+            <a href="contact.html?plan=opti-google" class="btn btn-primary">Choisir ce plan</a>
+          </div>
+
+          <!-- Gestion mensuelle -->
+          <div class="plan-card">
+            <div class="plan-card__name">Gestion mensuelle</div>
+            <div class="plan-card__price">89<span>/mois</span></div>
+            <p class="plan-card__desc">Nous gérons votre fiche Google au quotidien pour maximiser votre visibilité.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Gestion complète de la fiche</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>8 posts / mois</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Réponse à tous les avis</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Ajout de photos régulier</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rapport mensuel détaillé</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Optimisation continue</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Sans engagement</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Support réactif</li>
+            </ul>
+            <a href="contact.html?plan=mensuel-google" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RÉSEAUX SOCIAUX ── -->
+      <div x-show="activeTab === 'reseaux'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0">
+        <div class="pricing-tabs-grid">
+          <!-- Essentiel -->
+          <div class="plan-card">
+            <div class="plan-card__name">Essentiel</div>
+            <div class="plan-card__price">199<span>/mois</span></div>
+            <p class="plan-card__desc">L'essentiel pour maintenir une présence active sur vos réseaux.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>1 réseau social (Instagram ou Facebook)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>8 publications / mois</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rédaction des légendes</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Planification et publication</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rapport mensuel basique</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Stories / Reels</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Community management</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Publicité sociale incluse</li>
+            </ul>
+            <a href="contact.html?plan=essentiel-social" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+
+          <!-- Growth -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-badge">Le plus choisi</div>
+            <div class="plan-card__name">Growth</div>
+            <div class="plan-card__price">449<span>/mois</span></div>
+            <p class="plan-card__desc">Développez votre communauté et boostez votre engagement.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>2 réseaux sociaux</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>20 publications / mois</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Stories + Reels (4/mois)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Community management</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Stratégie de contenu</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rapport mensuel détaillé</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Hashtag research</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Publicité sociale gérée</li>
+            </ul>
+            <a href="contact.html?plan=growth-social" class="btn btn-primary">Choisir ce plan</a>
+          </div>
+
+          <!-- Agence Complète -->
+          <div class="plan-card">
+            <div class="plan-card__name">Agence Complète</div>
+            <div class="plan-card__price">899<span>/mois</span></div>
+            <p class="plan-card__desc">La gestion complète de votre présence sur tous les réseaux.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Tous vos réseaux sociaux</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Publications illimitées</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Stories + Reels illimités</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Community management complet</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Budget pub sociale géré (200€)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Stratégie éditoriale mensuelle</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rapport hebdomadaire</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Responsable de compte dédié</li>
+            </ul>
+            <a href="contact.html?plan=agence-social" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── RÉSERVATION ── -->
+      <div x-show="activeTab === 'reservation'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0">
+        <div class="pricing-tabs-grid">
+          <!-- Option site -->
+          <div class="plan-card">
+            <div class="plan-card__name">Option Site</div>
+            <div class="plan-card__price">150<span>€</span></div>
+            <p class="plan-card__desc">À ajouter à votre site web existant pour accepter les réservations.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Intégration sur votre site existant</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>1 service / prestation</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Calendrier de disponibilités</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Confirmations email automatiques</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Rappels clients</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Multi-services</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Paiement en ligne</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Multi-employés</li>
+            </ul>
+            <a href="contact.html?plan=option-resa" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+
+          <!-- Pro Multi-services -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-badge">Le plus choisi</div>
+            <div class="plan-card__name">Pro Multi-services</div>
+            <div class="plan-card__price">350<span>€</span></div>
+            <p class="plan-card__desc">Gérez plusieurs services et plusieurs prestataires facilement.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Multi-services illimités</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Multi-employés / prestataires</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Paiement en ligne (Stripe)</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Calendrier avancé avec créneaux</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>SMS de rappel automatique</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Dashboard de gestion</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Intégration Google Calendar</li>
+              <li class="plan-feature plan-feature--no"><span class="plan-feature__icon">✗</span>Application mobile dédiée</li>
+            </ul>
+            <a href="contact.html?plan=pro-resa" class="btn btn-primary">Choisir ce plan</a>
+          </div>
+
+          <!-- Standalone -->
+          <div class="plan-card">
+            <div class="plan-card__name">Standalone</div>
+            <div class="plan-card__price">490<span>€</span></div>
+            <p class="plan-card__desc">Un mini-site de réservation indépendant, sans site web nécessaire.</p>
+            <ul class="plan-features">
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Mini-site de réservation dédié</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Multi-services + Multi-employés</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Paiement en ligne intégré</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Nom de domaine inclus</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Design personnalisé à votre charte</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>SMS + Email automatiques</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Dashboard complet</li>
+              <li class="plan-feature plan-feature--yes"><span class="plan-feature__icon">✓</span>Hébergement 1 an inclus</li>
+            </ul>
+            <a href="contact.html?plan=standalone-resa" class="btn btn-outline">Choisir ce plan</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="padding-top:0;" aria-labelledby="faq-heading">
+    <div class="container" style="max-width:760px;">
+      <div class="section-header" data-aos="fade-up">
+        <h2 id="faq-heading">Questions <span class="gradient-text">fréquentes</span></h2>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="0">
+          <button class="accordion-trigger" aria-expanded="false">
+            Comment se passe le paiement ?
+            <svg class="accordion-trigger__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content">
+            Nous acceptons le paiement en deux fois : 50% à la commande, 50% à la livraison. Pour les abonnements mensuels, le prélèvement est effectué le 1er de chaque mois. Nous acceptons virement bancaire et carte de crédit via Stripe.
+          </div>
+        </div>
+
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="50">
+          <button class="accordion-trigger" aria-expanded="false">
+            Puis-je changer de formule en cours de route ?
+            <svg class="accordion-trigger__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content">
+            Absolument. Vous pouvez upgrader ou downgrader votre formule à tout moment. Pour les abonnements, le changement prend effet au mois suivant. Aucun frais de changement n'est appliqué.
+          </div>
+        </div>
+
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+          <button class="accordion-trigger" aria-expanded="false">
+            Y a-t-il des frais cachés ?
+            <svg class="accordion-trigger__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content">
+            Non. Le prix affiché est le prix final. Nous mentionnons clairement dans nos devis si des coûts tiers sont à prévoir (hébergement, nom de domaine, outils spécifiques). Aucune mauvaise surprise.
+          </div>
+        </div>
+
+        <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
+          <button class="accordion-trigger" aria-expanded="false">
+            Quel est le délai de livraison réel ?
+            <svg class="accordion-trigger__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="accordion-content">
+            Les délais indiqués sont des engagements, pas des estimations. Site web : 7 à 14 jours. Flyers : 48h à 72h. Fiche Google : 48h. Réservation : 3 à 5 jours. Si nous ne tenons pas les délais, nous vous offrons un service supplémentaire.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2>Besoin d'une formule sur-mesure ?</h2>
+        <p>Contactez-nous pour un devis personnalisé adapté à vos besoins spécifiques.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-cta-white">Obtenir un devis gratuit</a>
+          <a href="services.html" class="btn btn-cta-outline">Découvrir nos services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="url(#fLogoGradT)"/>
+              <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="fLogoGradT" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+            </svg>
+            <span class="nav__logo-text">ZDigital</span>
+          </a>
+          <p>Votre partenaire digital de confiance.</p>
+          <div class="footer__socials">
+            <a href="https://instagram.com/zdigital" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></a>
+            <a href="https://linkedin.com/company/zdigital" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#site-web">Création de site web</a></li>
+            <li><a href="services.html#flyers">Flyers &amp; Visuels</a></li>
+            <li><a href="services.html#google">Fiche Google</a></li>
+            <li><a href="services.html#reseaux">Réseaux sociaux</a></li>
+            <li><a href="services.html#ads">Publicité en ligne</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:contact@zdigital.fr">contact@zdigital.fr</a></li>
+            <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+            <li style="color:var(--text-muted);font-size:0.9rem;">Lun–Ven, 9h–18h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ZDigital. Tous droits réservés.</p>
+        <nav class="footer__legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pricing.js"></script>
+  <script>
+    // Accordion
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', function() {
+        const item = this.closest('.accordion-item');
+        const content = item.querySelector('.accordion-content');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.accordion-content').classList.remove('open');
+          i.querySelector('.accordion-trigger').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          content.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

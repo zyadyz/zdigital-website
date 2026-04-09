@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — ZDigital | Demandez votre devis gratuit</title>
+  <meta name="description" content="Contactez ZDigital pour un devis gratuit sous 48h. Création de site web, réseaux sociaux, publicité en ligne — discutons de votre projet digital." />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Contact — ZDigital" />
+  <meta property="og:description" content="Demandez votre devis gratuit sous 48h. Aucun engagement." />
+  <meta property="og:url" content="https://zdigital.fr/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — ZDigital" />
+
+  <link rel="canonical" href="https://zdigital.fr/contact.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="ZDigital — Accueil">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="url(#logoGradC)"/>
+            <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="logoGradC" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+          </svg>
+          <span class="nav__logo-text">ZDigital</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Menu mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="services.html">Services</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="text-align:center;justify-content:center;">Demander un devis</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Contact</span>
+      </nav>
+      <div class="tag" data-aos="fade-up">Réponse sous 48h</div>
+      <h1 data-aos="fade-up" data-aos-delay="50">Parlons de votre <span class="gradient-text">projet digital</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">Devis gratuit, sans engagement. Nous étudions votre demande et revenons vers vous sous 48 heures ouvrées.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- FORM -->
+        <div data-aos="fade-up">
+          <div class="form-card">
+            <h2>Envoyez-nous votre demande</h2>
+            <p>Complétez le formulaire et nous vous répondrons dans les 48h ouvrées avec une proposition personnalisée.</p>
+
+            <form id="contact-form" novalidate aria-label="Formulaire de contact">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="prenom">Prénom <span aria-hidden="true" style="color:#FF5757">*</span></label>
+                  <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required autocomplete="given-name" />
+                  <span class="field-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="nom">Nom <span aria-hidden="true" style="color:#FF5757">*</span></label>
+                  <input type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="family-name" />
+                  <span class="field-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="entreprise">Entreprise</label>
+                <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise (optionnel)" autocomplete="organization" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email <span aria-hidden="true" style="color:#FF5757">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="votre@email.fr" required autocomplete="email" />
+                  <span class="field-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="telephone">Téléphone</label>
+                  <input type="tel" id="telephone" name="telephone" placeholder="+33 6 12 34 56 78" autocomplete="tel" />
+                  <span class="field-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service souhaité <span aria-hidden="true" style="color:#FF5757">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Sélectionnez un service</option>
+                  <option value="site-web">Création de site web</option>
+                  <option value="flyers">Flyers &amp; Visuels</option>
+                  <option value="google">Fiche Google optimisée</option>
+                  <option value="reservation">Système de réservation</option>
+                  <option value="reseaux">Gestion des réseaux sociaux</option>
+                  <option value="ads">Publicité en ligne (Ads)</option>
+                  <option value="pack">Pack complet</option>
+                  <option value="autre">Autre / Je ne sais pas encore</option>
+                </select>
+                <span class="field-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Budget envisagé</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Quel est votre budget ?</option>
+                  <option value="moins-500">Moins de 500€</option>
+                  <option value="500-1000">500€ – 1 000€</option>
+                  <option value="1000-2000">1 000€ – 2 000€</option>
+                  <option value="2000-5000">2 000€ – 5 000€</option>
+                  <option value="plus-5000">Plus de 5 000€</option>
+                  <option value="a-definir">À définir ensemble</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true" style="color:#FF5757">*</span></label>
+                <textarea id="message" name="message" placeholder="Décrivez votre projet, vos besoins, votre cible... Plus vous êtes précis, mieux nous pouvons vous conseiller." required rows="5"></textarea>
+                <span class="field-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                <span class="btn-text">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Envoyer ma demande
+                </span>
+              </button>
+            </form>
+
+            <!-- Success -->
+            <div id="form-success" class="form-success" role="status" aria-live="polite">
+              <div class="form-success__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <h3>Message envoyé !</h3>
+              <p>Merci pour votre demande. Notre équipe vous recontacte sous <strong>48 heures ouvrées</strong> avec une proposition personnalisée et gratuite.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- INFO -->
+        <div data-aos="fade-up" data-aos-delay="150">
+          <h3 style="margin-bottom:24px;">Pourquoi choisir ZDigital ?</h3>
+
+          <div class="reassurance-list">
+            <div class="reassurance-item">
+              <div class="reassurance-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <h4>Devis 100% gratuit</h4>
+                <p>Aucun engagement, aucun frais pour obtenir votre devis personnalisé. Réponse garantie sous 48h ouvrées.</p>
+              </div>
+            </div>
+
+            <div class="reassurance-item">
+              <div class="reassurance-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Accompagnement A à Z</h4>
+                <p>De la stratégie à la mise en ligne, nous vous accompagnons à chaque étape de votre projet digital.</p>
+              </div>
+            </div>
+
+            <div class="reassurance-item">
+              <div class="reassurance-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              </div>
+              <div>
+                <h4>Paiement en plusieurs fois</h4>
+                <p>50% à la commande, 50% à la livraison. Possibilité de paiement en 3 ou 4 fois sans frais sur demande.</p>
+              </div>
+            </div>
+
+            <div class="reassurance-item">
+              <div class="reassurance-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div>
+                <h4>Satisfait ou retravaillé</h4>
+                <p>Nous travaillons jusqu'à ce que vous soyez 100% satisfait. Révisions incluses dans toutes nos formules.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact direct -->
+          <div style="padding:24px;background:var(--surface);border-radius:var(--radius);border:var(--border-subtle);">
+            <h4 style="margin-bottom:16px;font-size:1rem;">Préférez-vous nous contacter directement ?</h4>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:contact@zdigital.fr">contact@zdigital.fr</a>
+              </div>
+              <div class="contact-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.77 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.72 6.72l1.06-1.06a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+              </div>
+              <div class="contact-detail">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Lundi – Vendredi, 9h00 – 18h00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="url(#fLogoGradC)"/>
+              <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="fLogoGradC" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+            </svg>
+            <span class="nav__logo-text">ZDigital</span>
+          </a>
+          <p>Votre partenaire digital de confiance.</p>
+          <div class="footer__socials">
+            <a href="https://instagram.com/zdigital" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></a>
+            <a href="https://linkedin.com/company/zdigital" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#site-web">Création de site web</a></li>
+            <li><a href="services.html#flyers">Flyers &amp; Visuels</a></li>
+            <li><a href="services.html#google">Fiche Google</a></li>
+            <li><a href="services.html#reseaux">Réseaux sociaux</a></li>
+            <li><a href="services.html#ads">Publicité en ligne</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:contact@zdigital.fr">contact@zdigital.fr</a></li>
+            <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+            <li style="color:var(--text-muted);font-size:0.9rem;">Lun–Ven, 9h–18h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ZDigital. Tous droits réservés.</p>
+        <nav class="footer__legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+
+  <script>
+    // Pre-fill service from URL param
+    const params = new URLSearchParams(window.location.search);
+    const planParam = params.get('plan');
+    if (planParam) {
+      const sel = document.getElementById('service');
+      const mapping = {
+        'starter-web': 'site-web', 'pro-web': 'site-web', 'premium-web': 'site-web',
+        'basique-flyers': 'flyers', 'pro-flyers': 'flyers', 'pack-flyers': 'flyers',
+        'creation-google': 'google', 'opti-google': 'google', 'mensuel-google': 'google',
+        'essentiel-social': 'reseaux', 'growth-social': 'reseaux', 'agence-social': 'reseaux',
+        'option-resa': 'reservation', 'pro-resa': 'reservation', 'standalone-resa': 'reservation',
+        'starter': 'site-web', 'pro': 'site-web', 'premium': 'site-web'
+      };
+      if (sel && mapping[planParam]) {
+        sel.value = mapping[planParam];
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — ZDigital | Marketing Digital Complet</title>
+  <meta name="description" content="Tous les services de ZDigital : création de site web, flyers et visuels, fiche Google, système de réservation, réseaux sociaux et publicité en ligne." />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Services — ZDigital" />
+  <meta property="og:description" content="Création de site web, réseaux sociaux, publicité, fiches Google et visuels. Une agence, tous vos besoins." />
+  <meta property="og:url" content="https://zdigital.fr/services.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://zdigital.fr/services.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="ZDigital — Accueil">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="url(#logoGradS)"/>
+            <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="logoGradS" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+          </svg>
+          <span class="nav__logo-text">ZDigital</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Menu mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="services.html">Services</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="text-align:center;justify-content:center;">Demander un devis</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Services</span>
+      </nav>
+      <div class="tag" data-aos="fade-up">Notre expertise</div>
+      <h1 data-aos="fade-up" data-aos-delay="50">Des services <span class="gradient-text">sur-mesure</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">Chaque service est conçu pour maximiser votre impact digital. Découvrez ce que nous pouvons faire pour votre entreprise.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE QUICK NAV -->
+  <section style="background:var(--surface);border-bottom:var(--border-subtle);padding:20px 0;">
+    <div class="container">
+      <nav style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;" aria-label="Navigation rapide services">
+        <a href="#site-web" class="btn btn-outline" style="font-size:0.82rem;padding:8px 16px;">Site Web</a>
+        <a href="#flyers" class="btn btn-outline" style="font-size:0.82rem;padding:8px 16px;">Flyers &amp; Visuels</a>
+        <a href="#google" class="btn btn-outline" style="font-size:0.82rem;padding:8px 16px;">Fiche Google</a>
+        <a href="#reservation" class="btn btn-outline" style="font-size:0.82rem;padding:8px 16px;">Réservation</a>
+        <a href="#reseaux" class="btn btn-outline" style="font-size:0.82rem;padding:8px 16px;">Réseaux Sociaux</a>
+        <a href="#ads" class="btn btn-outline" style="font-size:0.82rem;padding:8px 16px;">Publicité Ads</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ── SITE WEB ── -->
+  <section class="service-section" id="site-web" aria-labelledby="sw-heading">
+    <div class="container">
+      <div class="service-section__layout">
+        <div class="service-section__content" data-aos="fade-right">
+          <div class="tag">Le plus populaire</div>
+          <h2 id="sw-heading">Création de <span class="gradient-text">site web</span></h2>
+          <p>Un site web professionnel est le socle de votre présence digitale. Nous concevons des sites rapides, beaux et optimisés qui transforment vos visiteurs en clients.</p>
+          <p>Que vous ayez besoin d'un site vitrine, d'une boutique en ligne ou d'une landing page de conversion, nous livrons en 7 à 14 jours avec un design sur-mesure à votre image.</p>
+          <ul class="inclusions-list">
+            <li>Design responsive mobile, tablette et desktop</li>
+            <li>Optimisation SEO on-page complète</li>
+            <li>Intégration Google Analytics et Search Console</li>
+            <li>Formulaire de contact et système de réservation</li>
+            <li>RGPD conforme (mentions légales, cookies)</li>
+            <li>Hébergement et nom de domaine selon formule</li>
+            <li>Formation à la gestion de contenu</li>
+            <li>Support post-livraison 30 jours minimum</li>
+          </ul>
+          <div class="service-ctas">
+            <a href="tarifs.html" class="btn btn-primary">Voir les tarifs</a>
+            <a href="contact.html?service=site-web" class="btn btn-outline">Devis gratuit</a>
+          </div>
+        </div>
+        <div class="service-section__visual" data-aos="fade-left">
+          <div class="service-visual-mockup thumb-1">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;gap:16px;">
+              <div style="width:70%;height:12px;background:rgba(255,255,255,0.4);border-radius:6px;"></div>
+              <div style="width:90%;height:8px;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+              <div style="width:75%;height:8px;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;margin-top:16px;">
+                <div style="height:80px;background:rgba(255,255,255,0.15);border-radius:10px;"></div>
+                <div style="height:80px;background:rgba(255,255,255,0.15);border-radius:10px;"></div>
+              </div>
+              <div style="width:50%;height:36px;background:rgba(255,255,255,0.3);border-radius:8px;margin-top:8px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FLYERS & VISUELS ── -->
+  <section class="service-section" id="flyers" aria-labelledby="fl-heading">
+    <div class="container">
+      <div class="service-section__layout service-section__layout--reverse">
+        <div class="service-section__content" data-aos="fade-left">
+          <div class="tag tag-turquoise">Design graphique</div>
+          <h2 id="fl-heading">Flyers &amp; <span class="gradient-text">Visuels</span></h2>
+          <p>Une identité visuelle forte, c'est la différence entre être remarqué et être ignoré. Nos designers créent des supports qui captivent l'attention et transmettent votre message avec impact.</p>
+          <p>Flyers promotionnels, affiches, stories Instagram, bannières web, cartes de visite — nous maîtrisons tous les formats print et digital pour renforcer votre image de marque.</p>
+          <ul class="inclusions-list">
+            <li>Flyers A4 / A5 / A6 recto-verso</li>
+            <li>Affiches format 40x60cm et plus</li>
+            <li>Visuels réseaux sociaux (tous formats)</li>
+            <li>Bannières publicitaires web</li>
+            <li>Cartes de visite et papeterie professionnelle</li>
+            <li>Fichiers HD prêts pour l'impression</li>
+            <li>Sources Illustrator / Photoshop / Canva</li>
+            <li>Révisions incluses jusqu'à votre satisfaction</li>
+          </ul>
+          <div class="service-ctas">
+            <a href="tarifs.html" class="btn btn-primary">Voir les tarifs</a>
+            <a href="contact.html?service=flyers" class="btn btn-outline">Devis gratuit</a>
+          </div>
+        </div>
+        <div class="service-section__visual" data-aos="fade-right">
+          <div class="service-visual-mockup thumb-2">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:16px;padding:24px;">
+              <div style="display:flex;flex-direction:column;gap:8px;align-items:center;">
+                <div style="width:90px;height:127px;background:rgba(255,255,255,0.2);border-radius:6px;box-shadow:4px 4px 0 rgba(0,0,0,0.2);"></div>
+                <div style="width:60px;height:6px;background:rgba(255,255,255,0.25);border-radius:3px;"></div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px;align-items:center;transform:rotate(5deg);">
+                <div style="width:90px;height:127px;background:rgba(255,255,255,0.15);border-radius:6px;box-shadow:4px 4px 0 rgba(0,0,0,0.2);"></div>
+                <div style="width:60px;height:6px;background:rgba(255,255,255,0.2);border-radius:3px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FICHE GOOGLE ── -->
+  <section class="service-section" id="google" aria-labelledby="gg-heading">
+    <div class="container">
+      <div class="service-section__layout">
+        <div class="service-section__content" data-aos="fade-right">
+          <div class="tag" style="color:#FFB800;background:rgba(255,184,0,0.12);border-color:rgba(255,184,0,0.3);">SEO Local</div>
+          <h2 id="gg-heading">Fiche Google <span class="gradient-text">optimisée</span></h2>
+          <p>86% des consommateurs cherchent une entreprise locale sur Google avant de la contacter. Si vous n'apparaissez pas dans les premiers résultats, vous perdez des clients chaque jour.</p>
+          <p>Nous créons, optimisons et gérons votre fiche Google Business Profile pour que vous apparaissiez en premier dans les recherches locales et sur Google Maps.</p>
+          <ul class="inclusions-list">
+            <li>Création et vérification complète du compte</li>
+            <li>Optimisation des mots-clés et de la description</li>
+            <li>Sélection des catégories les plus pertinentes</li>
+            <li>Ajout et optimisation des photos professionnelles</li>
+            <li>Stratégie d'obtention d'avis positifs</li>
+            <li>Publication régulière de posts et actualités</li>
+            <li>Rapport mensuel de performance et visibilité</li>
+            <li>Réponse professionnelle aux avis clients</li>
+          </ul>
+          <div class="service-ctas">
+            <a href="tarifs.html" class="btn btn-primary">Voir les tarifs</a>
+            <a href="contact.html?service=google" class="btn btn-outline">Devis gratuit</a>
+          </div>
+        </div>
+        <div class="service-section__visual" data-aos="fade-left">
+          <div class="service-visual-mockup thumb-3">
+            <div style="position:absolute;inset:0;padding:24px;display:flex;flex-direction:column;gap:16px;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;"></div>
+                <div>
+                  <div style="height:10px;background:rgba(255,255,255,0.45);border-radius:4px;width:140px;margin-bottom:6px;"></div>
+                  <div style="height:7px;background:rgba(255,255,255,0.25);border-radius:4px;width:100px;"></div>
+                </div>
+              </div>
+              <div style="display:flex;gap:5px;">
+                <div style="width:20px;height:20px;background:#FFB800;border-radius:4px;"></div>
+                <div style="width:20px;height:20px;background:#FFB800;border-radius:4px;"></div>
+                <div style="width:20px;height:20px;background:#FFB800;border-radius:4px;"></div>
+                <div style="width:20px;height:20px;background:#FFB800;border-radius:4px;"></div>
+                <div style="width:20px;height:20px;background:#FFB800;border-radius:4px;"></div>
+                <div style="height:20px;background:rgba(255,255,255,0.25);border-radius:4px;flex:1;"></div>
+              </div>
+              <div style="height:7px;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+              <div style="height:7px;background:rgba(255,255,255,0.2);border-radius:4px;width:80%;"></div>
+              <div style="height:7px;background:rgba(255,255,255,0.15);border-radius:4px;width:90%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RÉSERVATION ── -->
+  <section class="service-section" id="reservation" aria-labelledby="res-heading">
+    <div class="container">
+      <div class="service-section__layout service-section__layout--reverse">
+        <div class="service-section__content" data-aos="fade-left">
+          <div class="tag">Option disponible</div>
+          <h2 id="res-heading">Système de <span class="gradient-text">réservation</span></h2>
+          <p>Plus besoin de gérer les rendez-vous par téléphone ou par email. Un système de réservation en ligne permet à vos clients de prendre rendez-vous 24h/24, 7j/7, en quelques secondes.</p>
+          <p>Nous intégrons une solution de réservation adaptée à votre activité : cabinet médical, salon de coiffure, coach sportif, restaurant, auto-école... Toutes les activités sont concernées.</p>
+          <ul class="inclusions-list">
+            <li>Intégration sur votre site ou standalone</li>
+            <li>Calendrier de disponibilités personnalisable</li>
+            <li>Prise de rendez-vous 24h/24 automatisée</li>
+            <li>Confirmations et rappels par email et SMS</li>
+            <li>Paiement en ligne sécurisé (Stripe)</li>
+            <li>Multi-services et multi-prestataires</li>
+            <li>Synchronisation Google Calendar et Outlook</li>
+            <li>Dashboard de gestion intuitif</li>
+          </ul>
+          <div class="service-ctas">
+            <a href="tarifs.html" class="btn btn-primary">Voir les tarifs</a>
+            <a href="contact.html?service=reservation" class="btn btn-outline">Devis gratuit</a>
+          </div>
+        </div>
+        <div class="service-section__visual" data-aos="fade-right">
+          <div class="service-visual-mockup thumb-7">
+            <div style="position:absolute;inset:0;padding:20px;display:flex;flex-direction:column;gap:10px;">
+              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;">
+                <div style="height:24px;background:rgba(255,255,255,0.15);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:8px;color:rgba(255,255,255,0.5);"></div>
+                <div style="height:24px;background:rgba(255,255,255,0.15);border-radius:4px;"></div>
+                <div style="height:24px;background:rgba(255,255,255,0.3);border-radius:4px;"></div>
+                <div style="height:24px;background:rgba(255,255,255,0.15);border-radius:4px;"></div>
+                <div style="height:24px;background:rgba(255,255,255,0.15);border-radius:4px;"></div>
+                <div style="height:24px;background:rgba(255,255,255,0.15);border-radius:4px;"></div>
+                <div style="height:24px;background:rgba(255,255,255,0.3);border-radius:4px;border:2px solid rgba(255,255,255,0.5);"></div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;flex:1;">
+                <div style="height:28px;background:rgba(255,255,255,0.2);border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:8px;">
+                  <div style="width:8px;height:8px;border-radius:50%;background:#00D4AA;flex-shrink:0;"></div>
+                  <div style="height:6px;background:rgba(255,255,255,0.4);border-radius:3px;flex:1;"></div>
+                </div>
+                <div style="height:28px;background:rgba(255,255,255,0.12);border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:8px;">
+                  <div style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;"></div>
+                  <div style="height:6px;background:rgba(255,255,255,0.25);border-radius:3px;flex:1;"></div>
+                </div>
+                <div style="height:28px;background:rgba(255,255,255,0.12);border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:8px;">
+                  <div style="width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;"></div>
+                  <div style="height:6px;background:rgba(255,255,255,0.25);border-radius:3px;flex:1;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RÉSEAUX SOCIAUX ── -->
+  <section class="service-section" id="reseaux" aria-labelledby="rs-heading">
+    <div class="container">
+      <div class="service-section__layout">
+        <div class="service-section__content" data-aos="fade-right">
+          <div class="tag" style="color:#FF6B6B;background:rgba(255,107,107,0.12);border-color:rgba(255,107,107,0.3);">Community Management</div>
+          <h2 id="rs-heading">Gestion des <span class="gradient-text">réseaux sociaux</span></h2>
+          <p>Les réseaux sociaux sont devenus incontournables pour toucher et fidéliser votre audience. Mais créer du contenu de qualité, régulièrement, demande du temps et de l'expertise.</p>
+          <p>Notre équipe prend en charge votre présence sur Instagram, Facebook, LinkedIn et TikTok — de la stratégie à la publication, en passant par l'animation de votre communauté.</p>
+          <ul class="inclusions-list">
+            <li>Audit et définition de la stratégie éditoriale</li>
+            <li>Création de visuels et de contenus engageants</li>
+            <li>Rédaction des légendes et hashtags optimisés</li>
+            <li>Planification et publication régulière</li>
+            <li>Stories, Reels et vidéos courtes</li>
+            <li>Community management (réponses, engagement)</li>
+            <li>Rapport mensuel : portée, engagement, croissance</li>
+            <li>Veille concurrentielle et tendances secteur</li>
+          </ul>
+          <div class="service-ctas">
+            <a href="tarifs.html" class="btn btn-primary">Voir les tarifs</a>
+            <a href="contact.html?service=reseaux" class="btn btn-outline">Devis gratuit</a>
+          </div>
+        </div>
+        <div class="service-section__visual" data-aos="fade-left">
+          <div class="service-visual-mockup thumb-5">
+            <div style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:6px;padding:20px;">
+              <div style="background:rgba(255,255,255,0.2);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.3);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.25);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.3);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.3);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+              <div style="background:rgba(255,255,255,0.2);border-radius:6px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PUBLICITÉ EN LIGNE ── -->
+  <section class="service-section" id="ads" aria-labelledby="ads-heading">
+    <div class="container">
+      <div class="service-section__layout service-section__layout--reverse">
+        <div class="service-section__content" data-aos="fade-left">
+          <div class="tag" style="color:#0095FF;background:rgba(0,149,255,0.12);border-color:rgba(0,149,255,0.3);">ROI maximisé</div>
+          <h2 id="ads-heading">Publicité en ligne <span class="gradient-text">(Ads)</span></h2>
+          <p>Google Ads, Meta Ads, LinkedIn Ads — la publicité en ligne, bien exécutée, est le levier le plus puissant pour générer des clients rapidement. Mal exécutée, c'est de l'argent jeté par les fenêtres.</p>
+          <p>Notre équipe certifiée Google Ads et Meta Blueprint gère vos campagnes avec une obsession : maximiser votre retour sur investissement à chaque euro dépensé.</p>
+          <ul class="inclusions-list">
+            <li>Audit de vos campagnes existantes</li>
+            <li>Recherche de mots-clés et ciblage d'audience</li>
+            <li>Création des visuels et des textes publicitaires</li>
+            <li>Configuration et lancement des campagnes</li>
+            <li>A/B testing continu pour optimiser les résultats</li>
+            <li>Suivi des conversions et du ROI en temps réel</li>
+            <li>Rapport mensuel détaillé avec recommandations</li>
+            <li>Optimisation et ajustements budgétaires proactifs</li>
+          </ul>
+          <div class="service-ctas">
+            <a href="tarifs.html" class="btn btn-primary">Voir les tarifs</a>
+            <a href="contact.html?service=ads" class="btn btn-outline">Devis gratuit</a>
+          </div>
+        </div>
+        <div class="service-section__visual" data-aos="fade-right">
+          <div class="service-visual-mockup thumb-4">
+            <div style="position:absolute;inset:0;padding:24px;display:flex;flex-direction:column;gap:14px;">
+              <div style="display:flex;align-items:flex-end;gap:8px;flex:1;">
+                <div style="flex:1;display:flex;align-items:flex-end;height:100%;">
+                  <div style="width:100%;height:45%;background:rgba(255,255,255,0.2);border-radius:4px 4px 0 0;"></div>
+                </div>
+                <div style="flex:1;display:flex;align-items:flex-end;height:100%;">
+                  <div style="width:100%;height:70%;background:rgba(255,255,255,0.25);border-radius:4px 4px 0 0;"></div>
+                </div>
+                <div style="flex:1;display:flex;align-items:flex-end;height:100%;">
+                  <div style="width:100%;height:55%;background:rgba(255,255,255,0.2);border-radius:4px 4px 0 0;"></div>
+                </div>
+                <div style="flex:1;display:flex;align-items:flex-end;height:100%;">
+                  <div style="width:100%;height:85%;background:rgba(255,255,255,0.4);border-radius:4px 4px 0 0;"></div>
+                </div>
+                <div style="flex:1;display:flex;align-items:flex-end;height:100%;">
+                  <div style="width:100%;height:95%;background:rgba(255,255,255,0.35);border-radius:4px 4px 0 0;"></div>
+                </div>
+              </div>
+              <div style="display:flex;justify-content:space-between;">
+                <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:3px;width:15%;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:3px;width:15%;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:3px;width:15%;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:3px;width:15%;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:3px;width:15%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2>Un projet ? Parlons-en gratuitement.</h2>
+        <p>Chaque entreprise est unique. Obtenez un devis personnalisé adapté à vos besoins et à votre budget.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-cta-white">Obtenir mon devis gratuit</a>
+          <a href="tarifs.html" class="btn btn-cta-outline">Consulter les tarifs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="url(#fLogoGradS)"/>
+              <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="fLogoGradS" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+            </svg>
+            <span class="nav__logo-text">ZDigital</span>
+          </a>
+          <p>Votre partenaire digital de confiance.</p>
+          <div class="footer__socials">
+            <a href="https://instagram.com/zdigital" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></a>
+            <a href="https://linkedin.com/company/zdigital" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#site-web">Création de site web</a></li>
+            <li><a href="#flyers">Flyers &amp; Visuels</a></li>
+            <li><a href="#google">Fiche Google</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+            <li><a href="#reseaux">Réseaux sociaux</a></li>
+            <li><a href="#ads">Publicité en ligne</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:contact@zdigital.fr">contact@zdigital.fr</a></li>
+            <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+            <li style="color:var(--text-muted);font-size:0.9rem;">Lun–Ven, 9h–18h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ZDigital. Tous droits réservés.</p>
+        <nav class="footer__legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

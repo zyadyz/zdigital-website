@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — ZDigital | Nos réalisations</title>
+  <meta name="description" content="Découvrez les réalisations de ZDigital : sites web, flyers, fiches Google, réseaux sociaux. Des projets concrets pour des clients satisfaits." />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Portfolio — ZDigital" />
+  <meta property="og:description" content="Nos réalisations : sites web, flyers, fiches Google, réseaux sociaux." />
+  <meta property="og:url" content="https://zdigital.fr/portfolio.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://zdigital.fr/portfolio.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="ZDigital — Accueil">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="url(#logoGradP)"/>
+            <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="logoGradP" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+          </svg>
+          <span class="nav__logo-text">ZDigital</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Menu mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="services.html">Services</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="text-align:center;justify-content:center;">Demander un devis</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Portfolio</span>
+      </nav>
+      <div class="tag" data-aos="fade-up">Nos réalisations</div>
+      <h1 data-aos="fade-up" data-aos-delay="50">Des projets qui <span class="gradient-text">parlent d'eux-mêmes</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">Découvrez une sélection de nos réalisations pour des entreprises de secteurs variés. Chaque projet, une histoire de transformation digitale.</p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" style="padding-top:0;" x-data="{ activeFilter: 'tous' }">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="portfolio-filters" role="group" aria-label="Filtres par catégorie" data-aos="fade-up">
+        <button class="filter-btn" :class="{ active: activeFilter === 'tous' }" @click="activeFilter = 'tous'">Tous les projets</button>
+        <button class="filter-btn" :class="{ active: activeFilter === 'web' }" @click="activeFilter = 'web'">Sites Web</button>
+        <button class="filter-btn" :class="{ active: activeFilter === 'print' }" @click="activeFilter = 'print'">Flyers &amp; Print</button>
+        <button class="filter-btn" :class="{ active: activeFilter === 'social' }" @click="activeFilter = 'social'">Réseaux Sociaux</button>
+        <button class="filter-btn" :class="{ active: activeFilter === 'google' }" @click="activeFilter = 'google'">Fiches Google</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- 1 - Restaurant Le Jardin -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'web'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-1" data-initials="LJ" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;">
+                <div style="width:60%;height:8px;background:rgba(255,255,255,0.3);border-radius:4px;"></div>
+                <div style="width:40%;height:6px;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;width:70%;margin-top:8px;">
+                  <div style="height:40px;background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+                  <div style="height:40px;background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-web">Site Web</span>
+            <h3 class="portfolio-card__title">Restaurant Le Jardin</h3>
+            <p class="portfolio-card__sector">Restauration — Site vitrine + Réservation en ligne</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2 - Studio Beauté Lumière (Flyers) -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'print'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-2" data-initials="SB" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;">
+                <div style="width:45%;height:70%;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;">
+                  <div style="width:60%;height:60%;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+                </div>
+                <div style="width:45%;height:70%;background:rgba(255,255,255,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;">
+                  <div style="width:60%;height:60%;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-print">Flyers &amp; Print</span>
+            <h3 class="portfolio-card__title">Studio Beauté Lumière</h3>
+            <p class="portfolio-card__sector">Beauté / Bien-être — Pack flyers + Visuels Instagram</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 3 - Plomberie TLC (Fiche Google) -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'google'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-3" data-initials="TL" aria-hidden="true">
+              <div style="position:absolute;inset:0;padding:16px;display:flex;flex-direction:column;gap:8px;">
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <div style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.3);"></div>
+                  <div style="flex:1;">
+                    <div style="height:8px;background:rgba(255,255,255,0.4);border-radius:4px;width:70%;margin-bottom:4px;"></div>
+                    <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:4px;width:50%;"></div>
+                  </div>
+                </div>
+                <div style="display:flex;gap:3px;margin-top:4px;">
+                  <div style="width:14px;height:14px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:14px;height:14px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:14px;height:14px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:14px;height:14px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:14px;height:14px;background:#FFB800;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-google">Fiche Google</span>
+            <h3 class="portfolio-card__title">Plomberie TLC Services</h3>
+            <p class="portfolio-card__sector">Artisanat — Fiche Google + SEO local</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4 - AgriTech Solutions -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'web'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-4" data-initials="AT" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:16px;gap:8px;">
+                <div style="height:10px;background:rgba(255,255,255,0.35);border-radius:4px;width:50%;"></div>
+                <div style="height:7px;background:rgba(255,255,255,0.2);border-radius:4px;width:80%;"></div>
+                <div style="height:7px;background:rgba(255,255,255,0.2);border-radius:4px;width:65%;"></div>
+                <div style="margin-top:auto;height:28px;background:rgba(255,255,255,0.25);border-radius:6px;width:40%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-web">Site Web</span>
+            <h3 class="portfolio-card__title">AgriTech Solutions</h3>
+            <p class="portfolio-card__sector">Technologie — Site corporate + Blog expert</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 5 - Café des Arts (Réseaux Sociaux) -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'social'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-5" data-initials="CA" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;padding:12px;">
+                <div style="background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+                <div style="background:rgba(255,255,255,0.25);border-radius:6px;"></div>
+                <div style="background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+                <div style="background:rgba(255,255,255,0.25);border-radius:6px;"></div>
+                <div style="background:rgba(255,255,255,0.15);border-radius:6px;"></div>
+                <div style="background:rgba(255,255,255,0.25);border-radius:6px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-social">Réseaux Sociaux</span>
+            <h3 class="portfolio-card__title">Café des Arts</h3>
+            <p class="portfolio-card__sector">Restauration — Gestion Instagram + Reels</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 6 - Clinique Vétérinaire Patte & Cœur -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'print'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-6" data-initials="PC" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+                <div style="width:55%;aspect-ratio:1/1.41;background:rgba(255,255,255,0.15);border-radius:8px;box-shadow:6px 6px 0 rgba(0,0,0,0.1);display:flex;flex-direction:column;padding:12px;gap:6px;">
+                  <div style="height:8px;background:rgba(255,255,255,0.4);border-radius:4px;width:80%;"></div>
+                  <div style="height:6px;background:rgba(255,255,255,0.25);border-radius:4px;width:60%;"></div>
+                  <div style="margin-top:auto;height:20px;background:rgba(255,255,255,0.3);border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-print">Flyers &amp; Print</span>
+            <h3 class="portfolio-card__title">Clinique Patte &amp; Cœur</h3>
+            <p class="portfolio-card__sector">Vétérinaire — Affiches + Cartes de visite</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 7 - Auto École Conduite Plus -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'web'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-7" data-initials="AC" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:14px;gap:8px;">
+                <div style="display:flex;gap:6px;align-items:center;">
+                  <div style="width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,0.3);"></div>
+                  <div style="height:7px;background:rgba(255,255,255,0.3);border-radius:4px;width:40%;"></div>
+                  <div style="margin-left:auto;height:22px;width:60px;background:rgba(255,255,255,0.25);border-radius:4px;"></div>
+                </div>
+                <div style="height:50%;background:rgba(255,255,255,0.1);border-radius:8px;margin-top:4px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-web">Site Web</span>
+            <h3 class="portfolio-card__title">Auto École Conduite Plus</h3>
+            <p class="portfolio-card__sector">Formation — Site + Réservation de cours en ligne</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 8 - Épicerie Saveurs du Monde -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'google'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-8" data-initials="SM" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
+                <div style="width:70%;height:8px;background:rgba(255,255,255,0.35);border-radius:4px;"></div>
+                <div style="display:flex;gap:4px;">
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:rgba(255,255,255,0.2);border-radius:2px;"></div>
+                </div>
+                <div style="width:60%;height:6px;background:rgba(255,255,255,0.2);border-radius:4px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-google">Fiche Google</span>
+            <h3 class="portfolio-card__title">Épicerie Saveurs du Monde</h3>
+            <p class="portfolio-card__sector">Commerce — Fiche Google + Gestion mensuelle</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 9 - Coach Sportif Élite -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'social'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-9" data-initials="CE" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;">
+                <div style="width:45%;height:80%;background:rgba(255,255,255,0.2);border-radius:8px;"></div>
+                <div style="display:flex;flex-direction:column;gap:6px;flex:1;">
+                  <div style="height:6px;background:rgba(255,255,255,0.3);border-radius:4px;"></div>
+                  <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:4px;width:70%;"></div>
+                  <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:4px;width:85%;"></div>
+                  <div style="margin-top:4px;display:flex;gap:4px;">
+                    <div style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.3);"></div>
+                    <div style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.3);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-social">Réseaux Sociaux</span>
+            <h3 class="portfolio-card__title">Coach Sportif Élite</h3>
+            <p class="portfolio-card__sector">Sport / Bien-être — Instagram + Facebook Growth</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 10 - Cabinet Dentaire Sourire Plus -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'web'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-10" data-initials="SD" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:14px;gap:8px;">
+                <div style="height:8px;background:rgba(255,255,255,0.3);border-radius:4px;width:55%;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.2);border-radius:4px;width:75%;"></div>
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;flex:1;margin-top:6px;">
+                  <div style="background:rgba(255,255,255,0.12);border-radius:6px;"></div>
+                  <div style="background:rgba(255,255,255,0.18);border-radius:6px;"></div>
+                  <div style="background:rgba(255,255,255,0.12);border-radius:6px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-web">Site Web</span>
+            <h3 class="portfolio-card__title">Cabinet Dentaire Sourire+</h3>
+            <p class="portfolio-card__sector">Santé — Site Pro + Prise de RDV en ligne</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 11 - Immobilier Horizon -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'print'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-11" data-initials="IH" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:6px;padding:16px;">
+                <div style="display:flex;flex-direction:column;gap:4px;flex:1;height:75%;">
+                  <div style="flex:2;background:rgba(255,255,255,0.2);border-radius:6px;"></div>
+                  <div style="flex:1;background:rgba(255,255,255,0.12);border-radius:6px;"></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:4px;flex:1;height:75%;">
+                  <div style="flex:1;background:rgba(255,255,255,0.12);border-radius:6px;"></div>
+                  <div style="flex:2;background:rgba(255,255,255,0.2);border-radius:6px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-print">Flyers &amp; Print</span>
+            <h3 class="portfolio-card__title">Immobilier Horizon</h3>
+            <p class="portfolio-card__sector">Immobilier — Flyers biens + Panneaux agence</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 12 - Garage Mécanique Express -->
+        <article class="portfolio-card" x-show="activeFilter === 'tous' || activeFilter === 'google'" x-transition>
+          <div class="portfolio-card__thumb">
+            <div class="portfolio-thumb-mockup thumb-12" data-initials="ME" aria-hidden="true">
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:14px;gap:8px;">
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0;"></div>
+                  <div>
+                    <div style="height:7px;background:rgba(255,255,255,0.4);border-radius:4px;width:90px;margin-bottom:3px;"></div>
+                    <div style="height:5px;background:rgba(255,255,255,0.2);border-radius:4px;width:60px;"></div>
+                  </div>
+                </div>
+                <div style="display:flex;gap:3px;">
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                  <div style="width:12px;height:12px;background:#FFB800;border-radius:2px;"></div>
+                </div>
+                <div style="height:6px;background:rgba(255,255,255,0.15);border-radius:4px;"></div>
+                <div style="height:6px;background:rgba(255,255,255,0.15);border-radius:4px;width:80%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card__info">
+            <span class="portfolio-card__category cat-google">Fiche Google</span>
+            <h3 class="portfolio-card__title">Garage Mécanique Express</h3>
+            <p class="portfolio-card__sector">Automobile — Fiche Google + Avis clients</p>
+            <a href="contact.html" class="portfolio-card__btn">
+              Projet similaire
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2>Votre entreprise mérite ce niveau de qualité</h2>
+        <p>Rejoignez nos 150+ clients satisfaits et transformez votre présence digitale dès aujourd'hui.</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn btn-cta-white">Démarrer mon projet</a>
+          <a href="tarifs.html" class="btn btn-cta-outline">Voir les tarifs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="8" fill="url(#fLogoGradP)"/>
+              <path d="M9 10h14l-13 16h14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs><linearGradient id="fLogoGradP" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#00D4AA"/></linearGradient></defs>
+            </svg>
+            <span class="nav__logo-text">ZDigital</span>
+          </a>
+          <p>Votre partenaire digital de confiance.</p>
+          <div class="footer__socials">
+            <a href="https://instagram.com/zdigital" class="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2H7a5 5 0 00-5 5v10a5 5 0 005 5h10a5 5 0 005-5V7a5 5 0 00-5-5z"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg></a>
+            <a href="https://linkedin.com/company/zdigital" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#site-web">Création de site web</a></li>
+            <li><a href="services.html#flyers">Flyers &amp; Visuels</a></li>
+            <li><a href="services.html#google">Fiche Google</a></li>
+            <li><a href="services.html#reseaux">Réseaux sociaux</a></li>
+            <li><a href="services.html#ads">Publicité en ligne</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:contact@zdigital.fr">contact@zdigital.fr</a></li>
+            <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+            <li style="color:var(--text-muted);font-size:0.9rem;">Lun–Ven, 9h–18h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 ZDigital. Tous droits réservés.</p>
+        <nav class="footer__legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
